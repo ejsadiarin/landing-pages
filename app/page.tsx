@@ -1,18 +1,15 @@
 import { Button } from '@/components/ui/button';
-import Image from 'next/image'
+import HamburgerMenu from './HamburgerMenu';
 
 export default function Home() {
+
   return (
-    <body>
+    <body className='w-full h-full'>
       {/* Navbar */}
-      <nav className='flex justify-around w-full'>
+      <nav className='flex justify-around items-center w-full h-12'>
         <p>icon</p>
-        <div className='flex gap-5'>
-          <a href="/">Home</a>
-          <a href="/">Dashboard</a>
-          <a href="/">Contact</a>
-        </div>
-        <p>profile</p>
+        <p className='font-bold text-lg'>Tarkinge</p>
+        <HamburgerMenu />
       </nav>
 
       {/* Hero */}
