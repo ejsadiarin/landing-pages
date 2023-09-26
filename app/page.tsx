@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import HamburgerMenu from './HamburgerMenu';
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -7,7 +8,7 @@ export default function Home() {
     <body className='w-full h-full'>
       {/* Navbar */}
       <nav className='flex justify-around items-center w-full h-12'>
-        <p>icon</p>
+        <Image src='/tarkinge.svg' alt='Tarkinge Logo' width='50' height='50' />
         <p className='font-bold text-lg'>Tarkinge</p>
         <HamburgerMenu />
       </nav>
