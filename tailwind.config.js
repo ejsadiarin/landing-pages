@@ -16,6 +16,13 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        roboto_mono: ['var(--font-roboto-mono)'],
+        manrope: ['var(--font-manrope)'],
+        noto_sans: ['var(--font-noto-sans)'],
+        sofia_sans: ['var(--font-sofia-sans)'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
