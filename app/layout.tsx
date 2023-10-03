@@ -50,8 +50,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`
-          ${noto_sans.className}
-          ${inter.variable}
+          ${noto_sans.variable}
+          ${inter.className}
           ${roboto_mono.variable} 
           ${manrope.variable} 
           ${sofia_sans.variable}
