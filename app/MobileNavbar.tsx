@@ -21,7 +21,7 @@ export default function MobileNavbar() {
           
       {/* should be a pop up covering the whole mobile screen */}
       {isMobileMenuOpen && (
-        <div className='flex gap-5 justify-center items-center'>
+        <div className='flex flex-col absolute top-10 right-1/2 gap-10 z-10 justify-evenly items-center bg-slate-500 w-screen h-screen '>
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Blog</a>
