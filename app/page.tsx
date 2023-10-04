@@ -1,37 +1,39 @@
 import { Button } from "@/components/ui/button";
-import HamburgerMenu from "./HamburgerMenu";
+import MobileNavbar from "./MobileNavbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <body className="flex flex-col w-full h-full overflow-x-hidden">
       {/* Navbar */}
-      <nav className="flex justify-between items-center w-full h-12 p-4 mt-3">
-        <div className="flex justify-center items-center gap-3">
-          <Image
-            src="/tarkinge.svg"
-            alt="Tarkinge Logo"
-            width="40"
-            height="40"
-            className="rounded-full"
-          />
-          <p className="font-bold text-lg font-inter">Tarkinge</p>
-        </div>
-        <div className="flex gap-5">
-          <h3 className="font-bold font-manrope">Docs</h3>
-          <HamburgerMenu />
-        </div>
-      </nav>
+      <header>
+        <nav className="flex justify-between items-center w-full h-12 p-4 mt-3">
+          <section className="flex justify-center items-center gap-3">
+            <Image
+              src="/tarkinge.svg"
+              alt="Tarkinge Logo"
+              width="40"
+              height="40"
+              className="rounded-full"
+              />
+            <a href="/" className="font-bold text-lg font-inter">Tarkinge</a>
+          </section>
+          <section className="flex gap-5">
+            <a href="/" className="font-bold font-manrope">Docs</a>
+            <MobileNavbar />
+          </section>
+        </nav>
+      </header>
 
       {/* Hero */}
       <main className="mx-4 my-10 w-fit h-auto">
         <article className="flex flex-col gap-5 mb-4">
-          <div>
+          <section>
             <p className="font-medium text-[#282828] ">Powered by AI</p>
             <h1 className="font-[600] text-5xl text-[#282828] antialiased leading-snug">
               Supercharge your design workflow
             </h1>
-          </div>
+          </section>
           <p className="text-lg text-[#5F6980] mb-3 self-stretch">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
             natus perferendis nemo, inventore molestias id placeat veritatis at
@@ -47,7 +49,7 @@ export default function Home() {
           border-spacing-4 shadow-slate-800
           drop-shadow-2xl shadow-2xl backdrop-blur-md fixed -bottom-20
           -right-52 -z-10 overflow-hidden scroll-mx-0" 
-                      />
+      />
     </body>
   );
 }
