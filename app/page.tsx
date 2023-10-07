@@ -7,19 +7,25 @@ export default function Home() {
     <body className="flex flex-col w-full h-full overflow-x-hidden">
       {/* Navbar */}
       <header>
-        <nav className="flex justify-between items-center w-full h-12 p-4 mt-3">
-          <section className="flex justify-center items-center gap-3">
+        <nav className="flex justify-between items-center w-full h-12 p-10 mt-12">
+          <section className="flex justify-center items-center gap-7">
             <Image
               src="/tarkinge.svg"
               alt="Tarkinge Logo"
-              width="40"
-              height="40"
+              width="60"
+              height="60"
               className="rounded-full"
-              />
-            <a href="/" className="font-bold text-lg font-inter">Tarkinge</a>
+            />
+            <a href="/" className="font-bold text-2xl font-inter">
+              Tarkinge
+            </a>
           </section>
-          <section className="flex gap-5">
-            <a href="/" className="font-bold font-manrope">Docs</a>
+
+          {/* Mobile Nav Bar Section */}
+          <section className="flex gap-5 justify-center items-center">
+            <a href="/" className="font-bold text-2xl">
+              Docs
+            </a>
             <MobileNavbar />
           </section>
         </nav>
@@ -45,10 +51,11 @@ export default function Home() {
           Start for free
         </Button>
       </main>
-      <div className="bg-blue-100 w-[700px] h-[700px] rounded-full
+      <div
+        className="bg-blue-100 w-[700px] h-[700px] rounded-full
           border-spacing-4 shadow-slate-800
           drop-shadow-2xl shadow-2xl backdrop-blur-md fixed -bottom-20
-          -right-52 -z-10 overflow-hidden scroll-mx-0" 
+          -right-52 -z-10 overflow-hidden scroll-mx-0"
       />
     </body>
   );
