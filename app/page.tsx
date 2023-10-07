@@ -16,7 +16,7 @@ export default function Home() {
               height="60"
               className="rounded-full"
             />
-            <a href="/" className="font-bold text-2xl font-inter">
+            <a href="/" className="font-bold text-2xl">
               Tarkinge
             </a>
           </section>
@@ -32,15 +32,15 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <main className="mx-4 my-10 w-fit h-auto">
+      <main className="mx-4 my-10 w-fit h-auto p-5">
         <article className="flex flex-col gap-5 mb-4">
           <section>
             <p className="font-medium text-[#282828] ">Powered by AI</p>
-            <h1 className="font-[600] text-5xl text-[#282828] antialiased leading-snug">
+            <h1 className="font-[600] text-5xl text-[#282828] antialiased leading-tight">
               Supercharge your design workflow
             </h1>
           </section>
-          <p className="text-lg text-[#5F6980] mb-3 self-stretch">
+          <p className="text-xl text-[#5F6980] mb-3 self-stretch leading-relaxed tracking-wide">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
             natus perferendis nemo, inventore molestias id placeat veritatis at
             veniam et harum beatae? Nesciunt magnam optio autem architecto
