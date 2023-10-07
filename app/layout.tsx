@@ -1,6 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono, Manrope, Noto_Sans, Sofia_Sans } from "next/font/google";
+import {
+  Inter,
+  Roboto_Mono,
+  Manrope,
+  Noto_Sans,
+  Sofia_Sans,
+} from "next/font/google";
+import { ThemeProvider } from "@/components/ui/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -57,7 +64,14 @@ export default function RootLayout({
           ${sofia_sans.variable}
         `}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

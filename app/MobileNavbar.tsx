@@ -17,13 +17,13 @@ export default function MobileNavbar() {
   }
 
   return (
-    <nav>
+    <nav className="text-center justify-center items-center">
       {!isMobileMenuOpen ? (
         <button onClick={handleMobileMenuClick}>
           <svg
             className="hover:text-yellow-400"
             width="40"
-            height="40"
+            height="50"
             viewBox="0 0 15 15"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
