@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function DevjoyHero() {
   return (
   <section className="block">
@@ -24,21 +26,21 @@ export default function DevjoyHero() {
               </div>
               <div className="flex grid-flow-row gap-[16px] [grid-template:'Area'_/_1fr_1fr_1fr]">
                 <div className="mr-0 flex items-center sm:mr-6 md:mr-10">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9481ece6cf9c_Vector%20(9).svg" alt="" className="mr-2 inline-block max-w-full" />
+                  <Image src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9481ece6cf9c_Vector%20(9).svg" alt="" className="mr-2 inline-block max-w-full" />
                   <p className="text-sm sm:text-sm">Customers</p>
                 </div>
                 <div className="mr-0 flex items-center sm:mr-6 md:mr-10">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9481ece6cf9c_Vector%20(9).svg" alt="" className="mr-2 inline-block max-w-full" />
+                  <Image src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9481ece6cf9c_Vector%20(9).svg" alt="" className="mr-2 inline-block max-w-full" />
                   <p className="text-sm sm:text-sm">24/7 Support</p>
                 </div>
                 <div className="mr-0 flex items-center sm:mr-6 md:mr-10">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9481ece6cf9c_Vector%20(9).svg" alt="" className="mr-2 inline-block max-w-full" />
+                  <Image src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9481ece6cf9c_Vector%20(9).svg" alt="" className="mr-2 inline-block max-w-full" />
                   <p className="text-sm sm:text-sm">Cloud-based</p>
                 </div>
               </div>
             </div>
             <div className="">
-              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" className="mx-auto inline-block h-full w-full max-w-[640px] object-cover" />
+              <Image src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" className="mx-auto inline-block h-full w-full max-w-[640px] object-cover" />
             </div>
           </div>
         </div>
