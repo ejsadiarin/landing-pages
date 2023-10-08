@@ -31,12 +31,16 @@ export default function Home() {
           </section>
 
           {/* Mobile Nav Bar Section */}
-          <section className="flex gap-5 justify-center items-center text-center lg:hidden">
-            <a href="/" className="font-bold text-2xl">
-              Docs
-            </a>
-            <ModeToggle />
-            <MobileNavbar />
+          <section className="flex gap-5 items-center justify-center">
+            <div className="flex gap-5 justify-center items-center text-center lg:hidden max-sm:hidden">
+              <a href="/gleamy" className="font-bold text-2xl">
+                Docs
+              </a>
+              <ModeToggle />
+            </div>
+            <div className="lg:hidden">
+              <MobileNavbar />
+            </div>
           </section>
 
           {/* Large Screen+ Nav Bar Section */}
